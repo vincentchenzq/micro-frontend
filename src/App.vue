@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <button @click="jump(1)">页面1</button>
+    <button @click="jump(2)">页面2</button>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  mounted() {
+  },
+  methods: {
+    jump(num) {
+      this.$router.push({
+        path: `/page${num}`,
+      });
+    },
+  },
+};
 </script>
 
 <style>

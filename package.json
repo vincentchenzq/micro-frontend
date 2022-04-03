@@ -5,11 +5,17 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "i18nServer": "nodemon server.js"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.27.1",
+    "vue-router": "3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.11",
