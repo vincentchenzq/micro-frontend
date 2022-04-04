@@ -1,5 +1,5 @@
 <template>
   <div>
-    <span>页面2-按钮1</span>
+    <span>{{$t('page2.btnText')}}</span>
   </div>
 </template>
